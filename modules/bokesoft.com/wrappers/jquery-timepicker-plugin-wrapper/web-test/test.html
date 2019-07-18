@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: timepicker</title>
+    <script src="./test-bundle.js"></script>
+	<style>
+	.span-time{
+		position:relative;
+	}
+	.span-time .ui-datepicker-trigger{
+		position:absolute;
+		right:0;
+		top:0;
+		padding: 0;
+		border: 0;
+		background: none;
+		cursor:pointer;
+		outline: none;
+	}
+	</style>
+</head>
+<body>
+    <h1>Test: timepicker</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<p>demo：<a target="_blank" href="http://trentrichardson.com/examples/timepicker/#basic_examples">http://trentrichardson.com/examples/timepicker</a></p>
+    <hr/>
+    <div> 
+		
+	    <div class="test test1">
+			<h3>test1:日期</h3>
+			<span class="span-time"><input type="text" class="txtDatetime1"/></span>
+		</div>
+	    <div class="test test1">
+			<h3>test2:时间</h3>
+			<span class="span-time"><input type="text" class="txtDatetime2"/></span>
+		</div>		
+	    <div class="test test1">
+			<h3>test3:日期+时间</h3>
+			<span class="span-time"><input type="text" class="txtDatetime3"/></span>
+		</div>	
+	    <div class="test test1">
+			<h3>test4:多属性</h3>
+			<span class="span-time"><input type="text" class="txtDatetime4"/></span>
+		</div>	
+	    <div class="test test1">
+			<h3>test5:时间下拉</h3>
+			<span class="span-time"><input type="text" class="txtDatetime5"/></span>
+		</div>	
+	    <div class="test test1">
+			<h3>test6:默认日期</h3>
+			<span class="span-time"><input type="text" class="txtDatetime6" value="08/20/2014"/></span>
+		</div>	
+	    <div class="test test1">
+			<h3>test7:默认日期+时间</h3>
+			<div>
+				<input type="text" name="txtDatetime7" class="txtDatetime7" value="09/15/2012">
+				<input type="text" name="txtDatetime7_alt" class="txtDatetime7_alt" value="10:15" style="cursor: pointer;">
+			</div>
+		</div>	
+	    <div class="test test1">
+			<h3>test8:日期时间(不显示时间进度条)</h3>
+			<span class="span-time"><input type="text" class="txtDatetime8" value="08/20/2014 01:22 pm"/></span>
+		</div>	
+	    <div class="test test1">
+			<h3>test9:限制日期时间</h3>
+			<span class="span-time"><input type="text" class="txtDatetime9"/></span>
+		</div>			
+	</div>
+	<script type="text/javascript">
+		doTest();
+	</script>
+</body>
+</html>

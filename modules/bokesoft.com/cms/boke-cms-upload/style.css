@@ -1,0 +1,30 @@
+.upload-btn form{
+	background:transparent;
+}
+.file-icon{
+	width:30px;
+	height:30px;
+	vertical-align: middle;
+	margin-right:5px;
+}
+
+.image-item img{
+	width:300px;
+}
+
+.upload-local-path{
+    padding:5px;
+	border:1px solid #eee;
+}
+.upload-file-show{
+	position:relative;
+}
+.upload-progress,
+svg.precent{
+	width:80px;
+	height:80px;
+}
+
+.fileSize{
+	color:#999;
+}

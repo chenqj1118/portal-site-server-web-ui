@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: chosen</title>
+    <script src="./test-bundle.js"></script>
+	<style>
+	body{
+	   margin: 0 100px;
+	}
+	.wrap{
+		width: 50%;	
+	}
+	select{
+		width:100%;
+	}
+	</style>
+</head>
+<body>
+    <h1>Test: chosen</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<p>demo：<a target="_blank" href="https://harvesthq.github.io/chosen/">https://harvesthq.github.io/chosen/</a></p>
+    <hr/>
+    <div class="chose-list"> 
+		
+	    <div class="chosen-test1 wrap">
+			<h3>test1:单选 (所有默认属性)</h3>
+			<select>  
+				<option value=""></option>  
+				<option value="United States">United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan">Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>
+		
+	    <div class="chosen-test2 wrap">
+			<h3>test2:多选 (添加'selected' & 'disabled' & 'data-placeholder')</h3>
+			<select data-placeholder="请选择一个国家..." multiple>  
+				<option value=""></option>  
+				<option value="United States" selected>United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan" disabled>Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>		
+		
+	    <div class="chosen-test3 wrap">
+			<h3>test3:多选 ('max_selected_options') 右侧显示</h3>
+			<!--".chosen-rtl" 选支持选择框从右到左-->
+			<select multiple class="chosen-rtl">  
+				<option value=""></option>  
+				<option value="United States">United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan">Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>			
+		
+		<div class="chosen-test4 wrap">
+			<h3>test4:分组单选 (允许取消单选项 & 选中项改变时提示)</h3>
+			<select>
+            <option value=""></option>
+            <optgroup label="NFC EAST">
+              <option>Dallas Cowboys</option>
+              <option>New York Giants</option>
+              <option>Philadelphia Eagles</option>
+              <option>Washington Redskins</option>
+            </optgroup>
+            <optgroup label="NFC NORTH">
+              <option>Chicago Bears</option>
+              <option>Detroit Lions</option>
+              <option>Green Bay Packers</option>
+              <option>Minnesota Vikings</option>
+            </optgroup>
+            </select> 
+		</div>		
+		
+		<div class="chosen-test5 wrap">
+			<h3>test5:单选 单选非必填项(可删)</h3>
+			<select>  
+				<option value=""></option>  
+				<option value="United States">United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan">Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>
+		
+		<div class="chosen-test6 wrap">
+			<h3>test6:多选 指定最大搜索结果数</h3>
+			<select multiple>  
+				<option value=""></option>  
+				<option value="United States">United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan">Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>
+		
+		<div class="chosen-test7 wrap">
+			<h3>test7: (让指定的select不被chosen渲染，原始输出)</h3>
+			<select>  
+				<option value=""></option>  
+				<option value="United States">United States</option>  
+				<option value="United Kingdom">United Kingdom</option>  
+				<option value="Afghanistan">Afghanistan</option>  
+				<option value="Albania">Albania</option>  
+            </select> 
+		</div>
+		
+		<script type="text/javascript">
+			doTest();
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多级选择器</title>
+	<script src="./test-bundle.js"></script>	
+</head>
+<body>
+
+    <h1>Test: boke-cms-level-box</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<p><a href="https://github.com/ciaoca/cxSelect"  target="_blank">https://github.com/ciaoca/cxSelect查看更多详情</a>  </p>
+  <fieldset id="city_china">
+    <legend>默认</legend>
+    <p>省份：<select class="province"></select></p>
+    <p>城市：<select class="city"></select></p>
+    <p>地区：<select class="area"></select></p>
+  </fieldset>
+
+    <fieldset id="global_location">
+        <legend>全球主要国家城市联动</legend>
+        <p>所在地区：
+            <select class="country" data-first-title="选择国家"></select>
+            <select class="state" data-required="true"></select>
+            <select class="city" data-required="true"></select>
+            <select class="region" data-required="true"></select>
+        </p>
+    </fieldset>
+  
+    <fieldset id="custom_data">
+    <legend>自定义选项</legend>
+    <p>一：<select class="first"></select></p>
+    <p>二：<select class="second"></select></p>
+    <p>三：<select class="third"></select></p>
+    <p>四：<select class="fourth"></select></p>
+    <p>五：<select class="fifth"></select></p>
+  </fieldset>
+
+
+    <fieldset>
+        <legend>API 接口</legend>
+        <div id="api_data">
+            <dl>
+                <dt>选择器组 A</dt>
+                <dd>
+                    <select class="province select"></select>
+                    <select class="city select"></select>
+                    <select class="area select"></select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>选择器组 B</dt>
+                <dd>
+                    <select class="first select"></select>
+                    <select class="second select"></select>
+                    <select class="third select"></select>
+                    <select class="fourth select"></select>
+                    <select class="fifth select"></select>
+                </dd>
+            </dl>
+        </div>
+
+        <p>
+            <button type="button" class="button green" name="attach" value="">attach</button>
+            <button type="button" class="button green" name="detach" value="">detach</button>
+            <button type="button" class="button green" name="clear" value="">clear</button>
+        </p>
+        <p>
+            <button type="button" class="button green" name="setSelect" value="b">更换 select 组</button>
+            <button type="button" class="button green" name="setData" value="china">更换数据：国内数据</button>
+            <button type="button" class="button green" name="setData" value="global">更换数据：全球数据</button>
+            <button type="button" class="button green" name="setData" value="custom">更换数据：自定义数据</button>
+        </p>
+        <p>
+            <button type="button" class="button green" name="required" value="0">更改 required</button>
+            <button type="button" class="button green" name="emptyStyle" value="">更改 emptyStyle</button>
+            <button type="button" class="button green" name="firstTitle" value="请选择">更改 firstTitle</button>
+        </p>
+    </fieldset>
+<script type="text/javascript">
+     doTest();
+</script>
+</body>
+</html>

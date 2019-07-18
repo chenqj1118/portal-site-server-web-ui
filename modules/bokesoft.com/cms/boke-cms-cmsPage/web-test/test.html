@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: boke-cms-cmsPage</title>
+    <script src="./test-bundle.js"></script>
+</head>
+<body>
+    <h1>Test: boke-cms-cmsPage</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test. (refreshRegion & popupDialog)</i></p>
+    <hr/>
+	
+<div class="date-list-area" style="width:800px;height:200px;border:1px solid #ccc;padding:10px;">
+	<table id="data-list"> 
+           <tr>
+               <td class="check"><input type="checkbox"></td>
+               <td class="author"><i class="zf">&nbsp;</i>张三</td>
+               <td class="mail-title"><a title="邮件邮件名称邮件名称邮件名称邮件名称名称" href="#">邮件邮件名称邮件名称邮件名称邮件名称名称</a></td>
+               <td class="time">2013.03.31</td>
+               <td class="size">15k<i class="file">&nbsp;</i></td>
+               <td title="重要" class="collect"></td>
+           </tr>
+           <tr>
+               <td class="check"><input type="checkbox"></td>
+               <td class="author">张三</td>
+               <td class="mail-title"><a title="邮件邮件名称邮件名称邮件名称邮件名称名称" href="#">邮件邮件名称邮件名称邮件名称邮件名称名称</a></td>
+               <td class="time">2013.03.31</td>
+               <td class="size">15k</td>
+               <td title="普通" class="no_collect"></td>
+           </tr>
+           <tr>
+               <td class="check"><input type="checkbox"></td>
+               <td class="author">张三</td>
+               <td class="mail-title"><a title="邮件邮件名称邮件名称邮件名称邮件名称名称" href="#">邮件邮件名称邮件名称邮件名称邮件名称名称</a></td>
+               <td class="time">2013.03.31</td>
+               <td class="size">15k</td>
+               <td title="普通" class="no_collect"></td>
+           </tr>		   
+	</table>
+</div>
+
+<p><button id="page-two-btn" onclick="replaceTxtFromLoc()">替换内容(第二页)(内容来自本地)</button></p>
+<p><button id="page-two-btn" onclick="replaceTxtFromSer()">替换内容(第二页)(内容来自后台)</button></p>
+<p><button id="popup-btn" onclick="openDialog()">弹出窗口</button></p>
+<p><button id="popup-btn" onclick="openDialog2()">弹出窗口嵌套</button></p>
+<script type="text/template" id="htmlStrTpl">
+		这是本页现成的字符串！这是本页现成的字符串！！</br>
+		这是本页现成的字符串！这是本页现成的字符串！！</br>
+		这是本页现成的字符串！这是本页现成的字符串！！</br>
+		这是本页现成的字符串！这是本页现成的字符串！！</br>
+        <button class="popup-btn-new">弹出新窗口</button>
+</script>
+</body>
+</html>

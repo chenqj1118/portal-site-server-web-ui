@@ -1,0 +1,27 @@
+{
+  "name": "webpack-public-path-fix",
+  "version": "1.0.0",
+  "description": "Detect '__webpack_public_path__' dynamiclly in web browser",
+  "main": "webpack-public-path-fix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "svn+https://dev.bokesoft.com:9443/svn/Yigo-redist/trunk/Frontend/modules/supports/webpack-public-path-fix"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "browser",
+    "test"
+  ],
+  "author": "bokesoft.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://dev.bokesoft.com:9443/trac/ecomm"
+  },
+  "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
+  "dependencies": {
+  }
+}

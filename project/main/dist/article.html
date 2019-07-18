@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="新闻公告">
+    <title>新闻公告</title>
+<script type="text/javascript" src="/dist/js/article.70664d2f.js"></script></head>
+<body>
+<!--引入通用的 topbar-->
+<nav> <div class="container clearfix"> <div class="logo_box fl_left"> <div class=logo_pic> <a href=./index.html target=_blank> <img src=/dist/img/logo.png alt=招商局工业集团有限公司 title=招商局 /> <h1 style=display:none>招商局工业集团有限公司</h1> </a> </div> </div> <ul class="fl_left ml25"> <li> <a href=./index.html>首页</a> </li> <li> <a href=./article.html target=_blank>公司信息</a> </li> <li> <a href=./article.html target=_blank>采购公告</a> </li> <li> <a href=./article.html target=_blank>制度规范</a> </li> <li> <a href=./article.html target=_blank>使用帮助</a> </li> <li> <a href=./article.html target=_blank>投诉建议</a> </li> </ul> <div class="fl_right right-login-box"> <div class=login> <a href=./login.html> <span>登录</span></a> <a href=./login.html> <span>注册</span></a> <a href=./my.html>个人账户</a> </div> </div> </div> </nav> <script> //进入页面凸显导航条中对应项：classList属性
+    var navitems = [...document.getElementsByClassName("navitem")];
+    navitems.forEach(function (navitem) {
+        if (window.location.href.indexOf(navitem.href) > -1) {
+            navitem.classList.value += " actived";
+        }
+    }); </script>
+
+<!--页面的正式内容在这里-->
+    <div id="app"></div>
+
+<!--引入通用的 footer-->
+<footer> <div class=container> <div class="footer-left fl_left tdwidth55"> <ul class=footer-link-list> <li><a href=javascript:void(0);>隐私保护</a></li> <li><a href=javascript:void(0);>法律声明</a></li> <li><a href=javascript:void(0);>联系方式</a></li> <li><a href=javascript:void(0);>主办单位</a></li> <li><a href=javascript:void(0);>机构设置</a></li> <li><a href=javascript:void(0);>隐私保护</a></li> </ul> <div class="row clearfix"> <div class=fl_left> <p>技术支持主办单位：招商局工业集团信息部</p> </div> </div> <div class="row clearfix"> <div class=fl_left> <p>©Copyright 2019-2020 版权所有：招商局工业集团</p> </div> </div> <div class=row> <p>访问量：56453478次</p> </div> </div> <div class="footer-right fl_right tdwidth45"> <div class="fl_right ml25"> <img src=/dist/img/public_address.png alt=""> <p>扫码关注公众号</p> </div> <div class=fl_right> <img src=/dist/img/load_APP.png alt=""> <p>扫码下载APP</p> </div> </div> </div> </footer>
+</body>
+</html>

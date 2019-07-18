@@ -1,0 +1,82 @@
+@charset"utf-8";
+/*弹出dialog*/
+.grayLayer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	z-index:9998;
+	filter:alpha(Opacity=40);
+	-moz-opacity:0.4;
+	opacity: 0.4;
+	display:none;
+	_zoom:1;
+	_width:100%;
+	_height:1500px;
+	_background: #ccc;
+	_position: absolute;
+}
+.popupLayer{
+	/*background: #316ba5;*/
+	background: #fff;
+	z-index:9999;
+	position: fixed;
+	_position: absolute;
+	left:50%;
+	/*overflow:hidden;*/
+	box-shadow: 5px 5px 5px #666;
+	display:none;
+}
+.popupContent{
+
+}
+.popupLayer a.close{
+	display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	right: 8px;
+	cursor: pointer;	
+}
+.popupLayer a.close:hover{
+	color:#333;
+	text-decoration:none;
+}
+.popupLayer a.close:after{
+	content: "×";
+	color: #999;
+	font-size: 20px;
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+.popupLayer a.close:hover:after{
+	color: #333;
+}
+.popupLayer h3{
+	color: #333;
+	font-size:1em;
+	font-family: "Microsoft Yahei", "微软雅黑","宋体", Verdana, Arial, Geneva, sans-serif;
+	text-align: left;
+	border: 0;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #eee;
+	margin: 0 10px;
+}
+.popupLayer.moving h3{
+	cursor:move;
+}
+/*弹出dialog end*/
+.boke-cms-ajax-loading{
+	display:none;
+	position:absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}

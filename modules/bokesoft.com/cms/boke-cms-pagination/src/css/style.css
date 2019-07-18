@@ -1,0 +1,67 @@
+/*翻页*/
+.PagerView{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+    padding: 0 150px;	
+}
+.PagerView .PagerViewLeft{
+	position:absolute;
+	left:0;
+	color:#999;
+}
+.PagerView .PagerViewMain{}
+.PagerView .PagerViewRight{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.PagerView .PagerViewMain span,
+.PagerView a{
+	margin-left: 10px;
+	padding: 0 10px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+}
+.PagerView .PagerViewMain span{
+	color:#999;
+}
+.PagerView i{
+	margin:0 3px;
+	font-style:normal;
+}
+.PagerView a:hover,
+.PagerView a:hover span{
+	color: #fff;
+	background:#df0b0b;
+	text-decoration:none;
+}
+.PagerView .on,
+.PagerView .cur-page {
+	color: #f60;
+	font-weight:bold;
+	border:0;
+}
+.goToPageTxt input{
+	height: 25px;
+    width: 40px;
+    border: 1px solid #eee;
+    text-indent: 5px;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+
+.boke-cms-ajax-loading{
+	display:none;
+	position:absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}

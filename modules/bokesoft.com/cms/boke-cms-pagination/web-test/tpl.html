@@ -1,0 +1,18 @@
+<p>查询结果：</p>
+<% if(items.length <= 0){ %>
+	<p><i>抱歉，没有找到相关的信息</i></p>
+<% } else { %>
+	<table>
+		<tbody>
+		<% _.each(items, function(item,idx){ %>
+			<tr class="announcement-item">
+				<td><%= idx+1 %></td>
+				<td><%= item.title%></td>
+				<td><%= item.price%></td>
+				<td><%= item.publishtime%></td>
+			</tr>
+		<% }); %>
+		</tbody>
+	</table>
+<% } %>
+

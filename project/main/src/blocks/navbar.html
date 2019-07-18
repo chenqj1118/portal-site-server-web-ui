@@ -1,0 +1,48 @@
+<nav>
+    <div class="container clearfix">
+        <div class="logo_box fl_left">
+            <div class="logo_pic">
+                <a href="./index.html" target="_blank">
+                    <img src="../images/logo.png" alt="招商局工业集团有限公司" title="招商局"/>
+                    <h1 style="display: none">招商局工业集团有限公司</h1>
+                </a>
+            </div>
+        </div>
+        <ul class="fl_left ml25">
+            <li>
+                <a href="./index.html">首页</a>
+            </li>
+            <li>
+                <a href="./article.html" target="_blank">公司信息</a>
+            </li>
+            <li>
+                <a href="./article.html" target="_blank">采购公告</a>
+            </li>
+            <li>
+                <a href="./article.html" target="_blank">制度规范</a>
+            </li>
+            <li>
+                <a href="./article.html" target="_blank">使用帮助</a>
+            </li>
+            <li>
+            <a href="./article.html" target="_blank">投诉建议</a>
+        </li>
+        </ul>
+        <div class="fl_right right-login-box">
+            <div class="login">
+                <a href="./login.html"> <span>登录</span></a>
+                <a href="./login.html"> <span>注册</span></a>
+				<a href="./my.html">个人账户</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    //进入页面凸显导航条中对应项：classList属性
+    var navitems = [...document.getElementsByClassName("navitem")];
+    navitems.forEach(function (navitem) {
+        if (window.location.href.indexOf(navitem.href) > -1) {
+            navitem.classList.value += " actived";
+        }
+    });
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap3-wrapper",
+  "version": "1.0.0",
+  "description": "Add bootstrap3 support based on https://github.com/bline/bootstrap-webpack",
+  "main": "src/bootstrap3.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "svn+https://dev.bokesoft.com:9443/svn/Yigo-redist/trunk/Frontend/modules/bokesoft.com/cms/boke-cms-bootstrap3"
+  },
+  "keywords": [
+    "webpack",
+    "bootstrap"
+  ],
+  "author": "bokesoft.com",
+  "license": "Commercial",
+  "bugs": {
+    "url": "https://dev.bokesoft.com:9443/trac/ecomm"
+  },
+  "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "es5-shim": "^4.5.7",
+    "jquery": "^1.12.2"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

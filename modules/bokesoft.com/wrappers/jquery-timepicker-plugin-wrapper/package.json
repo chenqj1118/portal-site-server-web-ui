@@ -1,0 +1,19 @@
+{
+  "name": "jquery-timepicker-plugin-wrapper",
+  "version": "1.0.0",
+  "description": "jquery-timepicker-plugin-wrapper",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-timepicker-addon": "^1.6.3"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

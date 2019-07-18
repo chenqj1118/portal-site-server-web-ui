@@ -1,0 +1,28 @@
+@import "./element-variables.scss";
+
+.banner_content img{
+	width:100%;
+	height:300px;
+}
+.indexAside{
+  .item{
+    margin-bottom:10px;
+  }
+}
+.el-main{
+  padding-top:0;
+  padding-right:0;
+}
+.box-card{
+  margin-bottom:20px;
+  border:0;
+  background:$color-white;
+  border-radius: 0;
+  .el-card__header{
+    padding:10px 20px;
+    border-bottom: 4px solid #f19149;
+    span{
+      font-weight: 700;
+    }
+  }
+}

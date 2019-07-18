@@ -1,0 +1,18 @@
+{
+  "name": "echarts-wrapper",
+  "version": "1.0.0",
+  "description": "纯 Javascript 的图表库",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "echarts": "^3.5.2"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

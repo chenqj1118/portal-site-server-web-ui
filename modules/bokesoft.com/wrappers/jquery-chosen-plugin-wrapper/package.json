@@ -1,0 +1,18 @@
+{
+  "name": "jquery-chosen-plugin-wrapper",
+  "version": "1.0.0",
+  "description": "chosen select",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "chosen-js": "^1.6.2"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

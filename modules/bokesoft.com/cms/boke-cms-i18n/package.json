@@ -1,0 +1,23 @@
+{
+  "name": "boke-cms-i18n",
+  "version": "1.0.0",
+  "description": "基础的 i18n 支持模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bokesoft.com",
+  "license": "MIT",
+  "dependencies": {
+    "di18n-translate": "0.0.9",
+    "js-cookie": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "jquery": "^3.2.1",
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  },
+  "bundledDependencies": [
+    "babel-preset-env"
+  ]
+}

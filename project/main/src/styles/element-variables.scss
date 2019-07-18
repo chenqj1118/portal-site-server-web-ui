@@ -1,0 +1,31 @@
+$color-black:#000;
+$color-white:#fff;
+
+//改变风格所需变量
+$--color-primary: #2994e0; //改变主题色变量
+$--color-secondary: #f19149; //改变主题色变量
+
+// 信息色
+$color-success: #00c658;
+$color-info:    #00b0ff;
+$color-warning: #ffd200;
+$color-errors:  #ff0000;
+
+.primaryBtn{
+  background-color: $--color-primary;
+  border-color: $--color-primary;
+  color: lighten($--color-primary,50%);
+  &:hover {
+    background-color: lighten($--color-primary,10%);
+    border-color: lighten($--color-primary,10%);
+  }
+  &:focus{
+    background: lighten($--color-primary,20%);
+    border-color: lighten($--color-primary,20%);
+  }
+}
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

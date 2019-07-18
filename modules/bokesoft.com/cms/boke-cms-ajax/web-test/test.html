@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: boke-cms-ajax</title>
+    
+    <!--[if lt IE 9]>
+	<script src="./es5-shim.js"></script>
+	<script src="./es5-sham.js"></script>
+	<![endif]-->
+    
+    <script src="./test-bundle.js"></script>
+</head>
+<body>
+    <h1>Test: boke-cms-ajax</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+    <hr/>
+    <div style="padding: 12px; line-height: 200%">
+        基本测试: 
+	    <a href="javascript:doTest()">[执行测试]</a>
+	    <br/>
+	    加载指示:
+	    <a href="javascript:doLongTest()">[默认指示器]</a>
+	    | <a href="javascript:doLongTest2()">[指定风格的指示器]</a>
+	    | <a href="javascript:doLongTestNone()">[无指示器]</a>
+	    <br/>
+	    错误处理:
+	    <a href="javascript:do500Error()">[500错误]</a>
+	    | <a href="javascript:do404Error()">[404错误]</a>
+	    <br/>
+	    错误信息:
+	    <a href="javascript:do500ErrorNotify()">[500错误-Notify]</a>
+	    | <a href="javascript:do404ErrorNotify()">[404错误-Notify]</a>
+	    | <a href="javascript:do500ErrorNone()">[500错误-不显示]</a>
+	    | <a href="javascript:do404ErrorNone()">[404错误-不显示]</a>
+		<hr/>
+		<a href="javascript:doTextTest()">[datatype为“text”]</a> 
+		| <a href="javascript:doJsonTest()">[datatype为“json”]</a>
+    </div>
+    <hr/>
+    <div id="console" style="background-color: orange; padding: 12px"><i>Result here</i></div>
+
+	<div id="waiting-layer" class="boke-cms-ajax-loading txt_center"
+	     style="position:fixed;width:100%;height:100%;bottom:0;top:0;left:0;top:0;z-index:999;text-align:center;background:#000;opacity:0.1;display:none">
+	  <img src="./loading.gif" style="position:relative;top:30%; width:128px"/>
+	</div>
+	<div id="waiting-layer" class="loading2 txt_center"
+	     style="position:fixed;width:100%;height:100%;bottom:0;top:0;left:0;top:0;z-index:999;text-align:center;background:#000;opacity:0.3;display:none">
+	  <img src="./loading2.gif" style="position:relative;top:30%; width:128px"/>
+	</div>
+</body>
+</html>

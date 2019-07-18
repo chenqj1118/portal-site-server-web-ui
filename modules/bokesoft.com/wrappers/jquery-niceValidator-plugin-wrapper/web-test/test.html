@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: Validator</title>
+    <script src="./test-bundle.js"></script>
+	<style>
+	body{
+	   margin: 0 100px;
+	}
+	.wrap{
+		width: 50%;	
+	}
+	select{
+		width:100%;
+	}
+	</style>
+</head>
+<body>
+    <h1>Test: Validator</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<p>demos：<a href="https://niceue.com/validator/">https://niceue.com/validator/</a></p>
+    <hr/>
+	<form class="form1" data-validator-option="{timely:2, focusCleanup:false}">
+		<h3>test1 .</h3>
+		<div class="form-item">
+			<label class="label">Username</label>
+			<input type="text" name="username"
+				data-rule="用户名:required;username;"
+				data-rule-username="[/^[\w\d]{3,12}$/, 'Please enter 3-12 digits, letters, underscores']"
+				data-tip="You can use letters, numbers and periods"
+			>
+		</div>
+		<div class="form-item">
+			<label class="label">Password</label>
+			<input type="password" name="pwd"
+				data-rule="密码: required; length(8~16)"
+				data-tip="Please fill in at least eight characters"
+			>
+		</div>
+		 <div class="form-item">
+			<label class="label">Email</label>
+			<input type="text" name="email" data-rule="required;email">
+		</div>
+		<div class="form-item">
+			<label class="label">Gender</label>
+			<select name="gender" data-rule="required">
+				<option value="">select ...</option>
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+				<option value="3">Other</option>
+			</select>
+		</div> 
+		<!--data-rule="checked"存在则为必选项-->
+		<div class="form-item">
+			<label class="label">Interest</label>
+			<label><input type="checkbox" name="interest" data-rule="checked">sports</label>
+			<label><input type="checkbox" name="interest">movie</label>
+			<label><input type="checkbox" name="interest">game</label>
+		</div>
+		<div class="form-item">
+			<button type="submit" class="test1-btn">Submit</button>
+		</div>
+	</form>
+	<form class="form2">
+		<h3>test2 Dynamic get field display.</h3>
+		<div class="form-item">
+			<label class="label">Name</label>
+			<input type="text" name="name" data-rule="name:required">
+		</div>
+		<div class="form-item" id="other-name">
+			<label class="label">other-Name</label>
+			<input type="text" name="other-name" data-rule="required">
+		</div>
+		<div class="form-item">
+			<label class="label">email</label>
+			<input type="email" name="email">
+		</div>
+		<div class="form-item">
+			<label class="label">mobile</label>
+			<input type="mobile" name="mobile">
+		</div>
+		<div class="form-item">
+			<label class="label">密码</label>
+			<input type="text" name="password" data-rule="密码:required">
+		</div>
+		<div class="form-item">
+			<label class="label">确认密码</label>
+			<input type="text" name="againPwd">
+		</div>
+		<div class="form-item">
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+	<script type="text/javascript">
+		doTest();
+	</script>
+</body>
+</html>

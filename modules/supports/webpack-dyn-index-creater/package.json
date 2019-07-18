@@ -1,0 +1,24 @@
+{
+  "name": "webpack-dyn-index-creater",
+  "version": "1.0.0",
+  "description": "Create \"window._require\" function in index.js to to make html-inline scripts could get modules dynamicly",
+  "main": "dyn-index-creater.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "svn+https://dev.bokesoft.com:9443/svn/Yigo-redist/trunk/Frontend/modules/supports/webpack-dyn-index-creater"
+  },
+  "keywords": [
+    "webpack",
+    "_require",
+    "dynamic"
+  ],
+  "author": "bokesoft.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://dev.bokesoft.com:9443/trac/ecomm"
+  },
+  "homepage": "https://dev.bokesoft.com:9443/trac/ecomm"
+}

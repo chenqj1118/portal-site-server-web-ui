@@ -1,0 +1,18 @@
+{
+  "name": "boke-cms-cmsPage",
+  "version": "1.0.0",
+  "description": "boke-cms-refreshRegion-popupDialog",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "boke-cms-ajax": "file:../boke-cms-ajax"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

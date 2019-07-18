@@ -1,0 +1,21 @@
+{
+  "name": "boke-cms-tabber-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bokesoft.com",
+  "bugs": {
+    "url": "https://dev.bokesoft.com:9443/trac/ecomm"
+  },
+  "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
+  "dependencies": {
+    "jquery": "^1.12.2"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}
+

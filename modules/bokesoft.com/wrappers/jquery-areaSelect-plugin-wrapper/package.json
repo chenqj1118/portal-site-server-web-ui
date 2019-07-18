@@ -1,0 +1,18 @@
+{
+  "name": "jquery-areaSelect-plugin-wrapper",
+  "version": "1.0.0",
+  "description": "areaSelect",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "JSON2": "^0.1.0",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

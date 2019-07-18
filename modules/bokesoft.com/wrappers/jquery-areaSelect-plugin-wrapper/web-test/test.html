@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址选择器</title>
+	<script src="./test-bundle.js"></script>	
+</head>
+<body>
+    <h1>Test: boke-cms-areaSelect</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<p>test</p>
+<div id="addrRegst">
+    <select class="select prov" name="GoodsProvince" style="width:30%;"></select>
+    <select class="select city" name="GoodsCity" disabled="disabled" style="width:30%;"></select>
+    <select class="select dist" name="GoodsDistrict" disabled="disabled" style="width:30%;"></select>
+</div>
+<br>
+    <p>test1默认值</p>
+<div id="addrE">
+     <select class="select prov" name="GoodsProvince" style="width:30%;"></select>
+     <select class="select city" name="GoodsCity" disabled="disabled" style="width:30%;"></select>
+     <select class="select dist" name="GoodsDistrict" disabled="disabled" style="width:30%;"></select>
+</div>
+<br>
+    <p>test2 datatest</p>
+    <div id="dataTest">
+        <select class="select prov" name="GoodsProvince" style="width:30%;"></select>
+        <select class="select city" name="GoodsCity" disabled="disabled" style="width:30%;"></select>
+        <select class="select dist" name="GoodsDistrict" disabled="disabled" style="width:30%;"></select>
+    </div>
+
+<script type="text/javascript">
+ $(function(){
+     doTest();
+ });
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: upload</title>
+</head>
+<style>
+.container{
+	padding:0 30px;
+}
+.c-common-container {
+    border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom:30px;
+}
+pre {
+    padding: 10px;
+    border: 1px dotted #785;
+    background: #f5f5f5;
+}
+code {
+    color: #600;
+    padding: 4px;
+	margin:0 5px;
+}
+</style>
+<body>
+    <h1>Test: boke-cms-upload</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+	<div class="container">
+		<h2>允许多文件上传</h2>
+		<pre>
+			<code>
+			function afterDo(fileData){
+				console.log(fileData);
+			}
+			var uploadOptions1 = {
+				$uploadFileShow:$("#testcase1 .upload-file-show"),
+				$uploadBtn:$("#testcase1 .upload-button"),
+				uploadAction: uploadUrl,
+				uploadType: 'image',  //image or file
+				ctxPath:"",
+				multiple: false,     //是否支持多文件上传。默认为 false。
+				showFileName: true,  //是否显示文件名称
+				showlocalPath: true,  //是否显示文件本地路径
+				parameters:{testcase:1},
+				successCallBack:afterDo
+			};
+			upload.defaultInit(uploadOptions1);
+			</code>
+		</pre>
+		<div class="c-common-container" id="testcase1">
+			<h2>测试用例 1</h2>
+			<pre>图片/文件上传, 指定<code>$uploadFileShow & $uploatBtn</code></pre>
+			<div class="upload-area">
+				<div class="upload-btn"><a title="上传" class="upload-button" href="javascript:void(0)" >上传</a></div>
+				<div class="upload-file-show">(Show DIV)</div>
+			</div>
+		</div>
+		
+		<div class="c-common-container" id="testcase2">
+			<h2>测试用例 2</h2>
+			<pre>图片/文件上传, 仅指定<code>$UploadArea</code></pre>
+			<div class="upload-area">
+				<div class="upload-btn"><a title="上传" class="upload-button" href="javascript:void(0)" >上传</a></div>
+				<div class="upload-file-show">(Show DIV)</div>
+			</div>
+		</div>
+		
+			
+		<div class="c-common-container" id="testcase5">
+			<h2>测试用例 5</h2> 
+			<pre>图片/文件上传, 仅指定<code>$uploadArea</code>, 但有“+”号继续上传的</pre>
+		</div>
+		
+	</div>
+	<script type="text/template" id="img-upload-tmpl">
+		<div class="upload-area">
+			<div class="upload-btn"><a title="上传" class="upload-button" href="javascript:void(0)" >上传</a></div>
+			<div class="upload-file-show">(Show DIV)</div>
+		</div>
+	</script>
+	<script src="./test-bundle.js"></script>
+</body>
+</html>

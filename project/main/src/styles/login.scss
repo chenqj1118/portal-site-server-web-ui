@@ -1,0 +1,251 @@
+@import "./element-variables.scss";
+header{
+    padding:25px 0;
+	.container{
+		position: relative;
+		.logo{
+			.logo-pic{
+				width: 130px;
+				height: 40px;
+				margin-bottom: 10px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			span{
+				font-size: 20px;
+				color:$--color-primary;
+			}
+		}
+		.htip{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-size: 16px;
+			.htip-link{
+				color:$--color-primary;
+			}
+		}
+	}
+}
+.login-box{
+
+    padding-top: 50px;
+	background-size: cover;
+	overflow: hidden;
+	height: 547px;
+	@media screen and (min-width: 1367px) {
+		padding-top: 220px;
+		height: 875px;
+	}
+}
+.box-card{
+    width: 420px;
+    margin: 0 auto 0 15%;
+    .loginForm{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .el-form-item{
+        text-align: center;
+		.el-input__prefix .el-input__icon{
+			font-size: 20px;
+		}
+    }
+    h1{
+        text-align: center;
+        color: $--color-primary;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top:10px;
+    }
+	.vcimgbox {
+		.vcimg{
+			width: 70px;
+			height: auto;
+			vertical-align: middle;
+		}
+		.vctips{
+			font-size: 12px;
+			float: right;
+			line-height: 20px;
+		}
+	}
+    .el-input__inner{
+        border-radius: 5px;
+    }
+    .loginbtn{
+        width: 100%;
+		@extend .primaryBtn;
+		font-size: 20px;
+		padding: 10px 0;
+    }
+	.loginElse{
+		.fa{
+			width: 40px;
+			height: 40px;
+			background: red;
+			border-radius: 50%;
+			line-height: 40px;
+			color: $color-white;
+			&.fa-weixin{
+				background-color: #64c65b;
+			}
+			&.fa-weibo{
+				background-color: #e46d7e;
+			}
+			&.fa-qq{
+				background-color: #68bde1;
+			}
+		}
+	}
+	.el-card.is-always-shadow{
+		box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .5)
+	}
+	.el-card__body{
+		padding: 10px;
+		.el-tabs__nav{
+			left: 40%;
+		}
+		.el-tabs__item{
+			font-size: 16px;
+		}
+		.el-tabs__nav-wrap::after{
+			height: 0;
+		}
+	}
+    // 注册页面
+    .verifycode{
+        width:45%;
+        float: left;
+    }
+    .btnmin{
+        width:35%;
+        float: right;
+    }
+    .textleft{
+        text-align: left;
+    }
+    .el-checkbox{
+        margin-right: 10px;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+        background-color:$--color-primary;
+        border-color:$--color-primary;
+    }
+    .el-checkbox__inner:hover{
+        border-color:$--color-primary;
+    }
+    .el-checkbox__input.is-focus .el-checkbox__inner{
+        border-color: $--color-primary;
+    }
+	.showSecurity{
+		span{
+			display: inline-block;
+			width: 29%;
+			min-width: 105px;
+		}
+		.el-progress{
+			display: inline-block;
+			width: 71%;
+		}
+	}
+	/* //根据安全等级不同设置 */
+	.scp25{   
+		color: red;
+		.el-progress-bar__inner{
+			background-color: red;
+		}
+	}
+	.scp50{
+		color: blue;
+		.el-progress-bar__inner{
+			background-color: blue;
+		}
+	}
+	.scp100{
+		color: green;
+		.el-progress-bar__inner{
+			background-color: green;
+		}
+	}
+}
+footer{
+    background: $color-white;
+    text-align: center;
+    padding-top:65px;
+}
+.fpbody{
+	background: $color-white;
+	.forgetPassword-box{
+		padding-top: 50px;
+		background: $color-white;
+		.box-card{
+			width: 560px;
+			h2{
+				margin-top: 0px;
+				margin-bottom: 25px;
+				text-align: left;
+		        color: $--color-primary;
+			}
+			.el-form{
+				.formtitle{
+					border-top: 1px dashed #999;
+					padding-top: 30px;
+					padding-bottom: 30px;
+					padding-left: 50px;
+					font-size: 17px;
+				}
+				.el-form-item{
+					width: 60%;
+					margin-left: auto;
+					margin-right: auto;
+					.vcimgbox .vcimg{
+						height: 40px;
+						margin: 0;
+					}
+				}
+				.el-progress {
+					width: 55%;
+				}
+				.el-input__inner{
+					border-width: 1px;
+					border-style: solid;
+					border-color: #ddd;
+				}
+				.fpbtn{
+					background-color: $--color-primary;
+					border-color: $--color-primary;
+					color: lighten($--color-primary,50%);
+					&:hover {
+						background-color: lighten($--color-primary,10%);
+						border-color: lighten($--color-primary,10%);
+					}
+				}
+				.vcbtn{
+					padding: 12px 0;
+				}
+			}
+			.btnmin{
+				width: 45%;
+			}
+		}
+	}
+	footer{
+	    background: $color-white;
+		@media screen and (min-width: 1281px) {
+			padding-top: 12%;
+		}
+	}
+}
+.login-bottom{
+	text-align: center;
+	margin-top: 40px;
+	color: lighten($color-black,50%);
+	span{
+		display: inline-block;
+		margin-right: 100px;
+	}
+}

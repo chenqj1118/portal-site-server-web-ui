@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test: boke-cms-i18n</title>
+    <script src="./test-bundle.js"></script>
+</head>
+<body>
+    <h1>Test: boke-cms-i18n</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i></p>
+    <hr/>
+    <div style="padding: 12px; line-height: 200%">
+	    <a href="javascript:testGetLocale()">[获得当前 Locale]</a>
+	    <br/>
+	    <a href="javascript:testSetLocaleEN()">[设置为 en_US]</a>
+	    | <a href="javascript:testSetLocaleZH()">[设置为 zh_CN]</a>
+	    | <a href="javascript:testSetLocaleTW()">[设置为 zh_TW]</a>
+	    | <a href="javascript:testSetLocaleGB()">[设置为 en_GB(无翻译)]</a>
+	    <br/>
+	    <a href="javascript:testSetOptions()">[使用自定义 Options]</a>
+	    | <a href="javascript:testResetOptions()">[恢复默认 Options]</a>
+	    <br/>
+	    <a href="javascript:testAppendMessages()">[增加多语言条目]</a>
+	</div>
+	<hr/>
+	<div class="resultArea"></div>
+</body>
+</html>

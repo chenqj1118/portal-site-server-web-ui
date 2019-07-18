@@ -1,0 +1,58 @@
+{
+  "name": "webpack-dev-web-test",
+  "version": "1.0.0",
+  "description": "Support web-based npm module development with webpack and webpack-dev-server",
+  "main": "web-test-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "svn+https://dev.bokesoft.com:9443/svn/Yigo-redist/trunk/Frontend/modules/supports/webpack-dev-web-test"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "browser",
+    "test"
+  ],
+  "author": "bokesoft.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://dev.bokesoft.com:9443/trac/ecomm"
+  },
+  "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "blueimp-tmpl": "^3.11.0",
+    "blueimp-tmpl-loader": "0.0.3",
+    "body-parser": "^1.18.3",
+    "colors": "^1.3.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^1.0.1",
+    "es5-shim": "^4.5.7",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
+    "imports-loader": "^0.8.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.9.0",
+    "proxy-middleware": "^0.15.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.12.0",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

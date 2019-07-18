@@ -1,0 +1,20 @@
+{
+  "name": "boke-cms-pagination",
+  "version": "1.0.0",
+  "description": "data pagination",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Run 'node test-server.js' then open 'http://localhost:<port>/web-test/test.html' to run test.\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "JSON2": "^0.1.0",
+    "jquery": "^1.12.4",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "boke-cms-ajax": "file:../boke-cms-ajax",
+    "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Test: ztree</title>
+    <script src="./test-bundle.js"></script>
+	<style>
+		a {
+			color:#3C6E31;
+			text-decoration: underline;
+		 }
+		a:hover {
+			background-color:#3C6E31;
+			color:white;
+		}
+
+		ul.ztree {
+			margin-top: 2px;
+			border: 1px solid #617775;
+			background: #f0f6e4;
+			width:220px;
+			height:360px;
+			overflow-y:scroll;
+			overflow-x:auto;
+		}
+
+		/* ruler */
+		div.ruler {
+			height:20px; 
+			width:220px; 
+			background-color:#f0f6e4;
+			border: 1px solid #333; 
+			margin-bottom: 5px; 
+			cursor: pointer
+		}
+		div.ruler div.cursor {
+			height:20px; 
+			width:30px; 
+			background-color:#3C6E31; 
+			color:white; 
+			text-align: right;
+			padding-right: 5px; 
+			cursor: pointer
+		}
+
+		.test{
+			margin-bottom:30px;
+		}
+	</style>
+</head>
+
+<body>
+ <h1>Test: boke-cms-ztree</h1>
+    <p><i>Run <u><code>node test-server.js</code></u> at module root path, then open <u><code>http://localhost:8080/web-test/test.html</code></u> to run test.</i>
+	   <i>更多详细API请参考<a href="http://www.treejs.cn/v3/api.php">http://www.treejs.cn/v3/api.php</a></i>
+	</p>
+    <hr/>
+<div class="content_wrap" style="margin-left:50px;">
+    <!--class为ztree不能随意更改-->
+    <h3>test1(以id,pid的形式存储数据)</h3>
+	<div class="test1 test">
+	     <ul id="treeDemo1" class="ztree"></ul>	
+	</div>
+	
+	<h3>test2(以name,children的形式存储数据)</h3>
+	<div class="test2 test">
+	     <ul id="treeDemo2" class="ztree"></ul>	
+	</div>
+	
+	<h3>test3(隐藏/显示当前选中节点的复选框)</h3>
+	<div class="test3 test">
+	    <ul id="treeDemo3" class="ztree"></ul>	
+		<a id="nocheckTrue" href="#" onclick="return false;">隐藏</a>
+		<a id="nocheckFalse" href="#" onclick="return false;">显示</a>
+	</div>
+	
+	<h3>test4(checkbox与radio组合使用)</h3>
+	<div class="test4 test">
+	    <ul id="treeDemo4" class="ztree"></ul>
+	</div>
+	
+	<h3>test5(修改/删除节点)</h3>
+	<div class="test5 test">
+		<ul id="treeDemo5" class="ztree"></ul>
+		<ul class="info">
+			<li><p>基本编辑按钮设置：<br/>
+					<input type="checkbox" id="remove" class="checkbox first" checked /><span>显示删除按钮</span>
+					<input type="checkbox" id="rename" class="checkbox " checked /><span>显示编辑按钮</span><br/>
+					remove 按钮的 title: <input type="text" id="removeTitle" value="remove" /><br/>
+					rename 按钮的 title: <input type="text" id="renameTitle" value="rename" />
+			</li>
+		</ul>
+	</div>
+	
+	<h3>test6(拖拽节点)</h3>
+	<div class="test6 test">
+	    <ul id="treeDemo6" class="ztree"></ul>
+		<ul class="info">
+			<li><p>基本拖拽设置：<br/>
+					<input type="checkbox" id="copy" class="checkbox first" checked /><span>允许复制</span>
+					<input type="checkbox" id="move" class="checkbox " checked /><span>允许移动</span><br/>
+			</li>
+			<li><p>拖拽相对位置设置：<br/>
+					<input type="checkbox" id="prev" class="checkbox first" checked /><span>prev</span>
+					<input type="checkbox" id="inner" class="checkbox " checked /><span>inner</span>
+					<input type="checkbox" id="next" class="checkbox " checked /><span>next</span><br/>
+			</li>
+		</ul>
+	</div>
+	
+	<h3>test7(一次性加载大量数据)</h3>
+	<div class="test7 test">
+		<ul>
+		<li><span>调整总节点数，测试加载速度：</span>
+			<div id="ruler" class="ruler" title="拖拽可调整节点数">
+				<div id="cursor" class="cursor">5000</div>
+			</div>
+			<div style="width:240px;">
+				<span>checkbox</span><input type="checkbox" id="showChk" title="是否显示 checkbox" class="checkbox first" />&nbsp;&nbsp;
+				[ <a id="createTree" href="#" title="初始化 zTree" onclick="return false;">初始化 zTree</a> ]
+			</div>
+		</li>
+		</ul>
+	    <ul id="treeDemo7" class="ztree"></ul>
+	</div>
+	
+	<h3>test8(下拉菜单)</h3>
+	<div class="p_relative fl_left">
+		<input type="text" id="carsClassifySel" class="txt" style="width:300px;height:25px;" readonly=readonly />
+		<span toggle="false" id="selBtn">▼</span>
+		<input type="hidden" name="carsClassify" id="carsClassify"/>
+		<div id="menuContent" class="menuContent" style="display:none;background-color:#fff;">
+			<ul id="treedataarea" class="ztree"></ul>
+		</div>		
+	</div>
+<script type="text/javascript">
+	doTest();
+</script>
+</body>
+</html>
