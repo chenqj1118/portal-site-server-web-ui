@@ -18,7 +18,7 @@
   "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
   "dependencies": {
     "JSON2": "^0.1.0",
-    "jquery": "^1.12.2",
+    "jquery": "^3.5.0",
     "jquery-toast-plugin-wrapper": "file:../../wrappers/jquery-toast-plugin-wrapper"
   },
   "devDependencies": {
