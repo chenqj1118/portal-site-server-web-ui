@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "boke-cms-ajax": "file:../boke-cms-ajax"
   },
   "devDependencies": {
