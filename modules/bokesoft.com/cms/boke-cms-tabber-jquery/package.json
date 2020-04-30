@@ -12,7 +12,7 @@
   },
   "homepage": "https://dev.bokesoft.com:9443/trac/ecomm",
   "dependencies": {
-    "jquery": "^1.12.2"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "webpack-dev-web-test": "file:../../../supports/webpack-dev-web-test"
