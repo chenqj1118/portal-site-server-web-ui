@@ -12,7 +12,7 @@
     "JSON2": "^0.1.0",
     "fast-upload": "^1.2.9",
     "file-types": "file:../boke-cms-file-types",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "jquery-mousewheel": "^3.1.13",
     "malihu-custom-scrollbar-plugin": "^3.1.5"
   },
